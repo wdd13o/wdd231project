@@ -1,0 +1,156 @@
+{
+    "questions": [
+        {
+            "id": "household",
+            "question": "How many people live in your household?",
+            "type": "number",
+            "unit": "people",
+            "emissionFactor": 2000,
+            "hint": "This helps us calculate per capita emissions."
+        },
+        {
+            "id": "electricity",
+            "question": "What's your average monthly electricity usage?",
+            "type": "range",
+            "min": 0,
+            "max": 2000,
+            "step": 50,
+            "unit": "kWh",
+            "default": 500,
+            "emissionFactor": 0.5,
+            "hint": "Check your utility bill for this information."
+        },
+        {
+            "id": "heating",
+            "question": "What's your primary heating source?",
+            "type": "select",
+            "options": [
+                {"value": "natural_gas", "label": "Natural Gas", "emissionFactor": 2.0},
+                {"value": "electric", "label": "Electric", "emissionFactor": 1.2},
+                {"value": "oil", "label": "Heating Oil", "emissionFactor": 2.7},
+                {"value": "propane", "label": "Propane", "emissionFactor": 1.5},
+                {"value": "wood", "label": "Wood", "emissionFactor": 0.3}
+            ],
+            "followup": {
+                "question": "How much do you spend monthly on heating in winter?",
+                "type": "range",
+                "min": 0,
+                "max": 500,
+                "step": 10,
+                "unit": "$"
+            }
+        },
+        {
+            "id": "car_mileage",
+            "question": "How many miles do you drive per year?",
+            "type": "range",
+            "min": 0,
+            "max": 30000,
+            "step": 1000,
+            "unit": "miles",
+            "default": 12000,
+            "emissionFactor": 0.404,
+            "hint": "For multiple cars, combine the total mileage."
+        },
+        {
+            "id": "car_efficiency",
+            "question": "What's your vehicle's fuel efficiency?",
+            "type": "range",
+            "min": 10,
+            "max": 60,
+            "step": 1,
+            "unit": "mpg",
+            "default": 25,
+            "hint": "Average is about 25 mpg for gasoline cars."
+        },
+        {
+            "id": "flights",
+            "question": "How many short flights (<4 hr) did you take last year?",
+            "type": "number",
+            "unit": "flights",
+            "emissionFactor": 500,
+            "hint": "Round trip counts as 2 flights."
+        },
+        {
+            "id": "diet",
+            "question": "Which best describes your diet?",
+            "type": "select",
+            "options": [
+                {"value": "meat_daily", "label": "Meat daily", "emissionFactor": 2500},
+                {"value": "meat_few_times", "label": "Meat a few times a week", "emissionFactor": 1800},
+                {"value": "vegetarian", "label": "Vegetarian", "emissionFactor": 1200},
+                {"value": "vegan", "label": "Vegan", "emissionFactor": 900}
+            ]
+        },
+        {
+            "id": "shopping",
+            "question": "How much do you spend monthly on new goods (clothing, electronics, etc.)?",
+            "type": "range",
+            "min": 0,
+            "max": 1000,
+            "step": 50,
+            "unit": "$",
+            "default": 200,
+            "emissionFactor": 0.5
+        },
+        {
+            "id": "waste",
+            "question": "How much waste does your household produce weekly?",
+            "type": "select",
+            "options": [
+                {"value": "small", "label": "Small bag (1-2)", "emissionFactor": 500},
+                {"value": "medium", "label": "Medium bag (3-4)", "emissionFactor": 1000},
+                {"value": "large", "label": "Large bag (5+)", "emissionFactor": 1500}
+            ]
+        },
+        {
+            "id": "recycling",
+            "question": "Do you regularly recycle paper, plastic, and metal?",
+            "type": "select",
+            "options": [
+                {"value": "yes", "label": "Yes, most materials", "emissionFactor": -500},
+                {"value": "some", "label": "Some materials", "emissionFactor": -200},
+                {"value": "no", "label": "No", "emissionFactor": 0}
+            ]
+        }
+    ],
+    "averages": {
+        "us": 16000,
+        "europe": 8000,
+        "global": 4000
+    },
+    "equivalents": {
+        "tree_months": 21.77,
+        "car_miles": 0.404,
+        "smartphones_charged": 0.008
+    },
+    "recommendations": [
+        {
+            "category": "electricity",
+            "threshold": 800,
+            "tips": [
+                "Switch to LED bulbs to save up to 80% on lighting energy.",
+                "Unplug devices when not in use to avoid phantom loads.",
+                "Consider installing solar panels to reduce grid dependence."
+            ]
+        },
+        {
+            "category": "car_mileage",
+            "threshold": 10000,
+            "tips": [
+                "Combine errands to reduce trips and save fuel.",
+                "Explore public transit or carpooling options.",
+                "Consider an electric or hybrid vehicle for your next purchase."
+            ]
+        },
+        {
+            "category": "diet",
+            "condition": "meat_daily",
+            "tips": [
+                "Try Meatless Mondays to reduce your dietary footprint.",
+                "Choose chicken over beef - it has a much lower carbon footprint.",
+                "Buy local and seasonal produce when possible."
+            ]
+        }
+    ]
+}

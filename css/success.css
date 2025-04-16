@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #4CAF50;
+    --primary-dark: #3e8e41;
+    --secondary-color: #8BC34A;
+    --light-green: #DCEDC8;
+    --white: #ffffff;
+    --gray-light: #f8f9fa;
+    --gray-medium: #e9ecef;
+    --gray-dark: #6c757d;
+    --dark: #343a40;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--light-green);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Animated Background */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.leaf {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1;
+    animation: falling linear infinite;
+}
+
+.leaf-1 {
+    background-image: url('../img/leaf1.png');
+    width: 80px;
+    height: 80px;
+    top: -10%;
+    left: 10%;
+    animation-duration: 15s;
+}
+
+.leaf-2 {
+    background-image: url('../img/leaf2.png');
+    width: 60px;
+    height: 60px;
+    top: -5%;
+    left: 30%;
+    animation-duration: 12s;
+}
+
+.leaf-3 {
+    background-image: url('../img/leaf3.png');
+    width: 70px;
+    height: 70px;
+    top: -8%;
+    left: 70%;
+    animation-duration: 18s;
+}
+
+.leaf-4 {
+    background-image: url('../img/leaf4.png');
+    width: 50px;
+    height: 50px;
+    top: -12%;
+    left: 85%;
+    animation-duration: 14s;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px)) rotate(360deg);
+    }
+}
+
+/* Success Card */
+.success-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    transition: all 0.3s ease;
+}
+
+.success-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Success Icon */
+.success-icon {
+    margin-bottom: 2rem;
+}
+
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2.5rem;
+    animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Logo */
+.logo {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Typography */
+h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.lead {
+    color: var(--gray-dark);
+    font-size: 1.25rem;
+}
+
+.success-message {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.success-message p {
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-success {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Tips List */
+.success-tips {
+    background-color: var(--gray-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.success-tips h5 {
+    color: var(--primary-color);
+}
+
+.success-tips li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .success-card {
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .success-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .success-actions .btn {
+        width: 100%;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .success-card {
+        padding: 1.5rem;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+}

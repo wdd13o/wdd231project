@@ -1,0 +1,39 @@
+/* Profile Image Styles */
+.profile-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Different size variations */
+.profile-image-sm {
+    width: 35px;
+    height: 35px;
+    border-width: 1px;
+}
+
+.profile-image-lg {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+}
+
+/* Fallback for broken images */
+.profile-image-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

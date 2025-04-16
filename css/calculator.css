@@ -1,0 +1,428 @@
+/* calculator.css */
+
+/* Base Styles */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #388E3C;
+    --accent-color: #8BC34A;
+    --dark-color: #2E7D32;
+    --light-color: #C8E6C9;
+    --text-color: #333;
+    --text-light: #666;
+    --white: #fff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+.bg-light {
+    background-color: var(--light-color) !important;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.display-4 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    animation: fadeIn 1s ease-out 0.3s both;
+}
+
+/* Progress Bar */
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    transition: width 0.6s ease;
+}
+
+#progress-text {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Calculator Form */
+#carbon-calculator {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    animation: slideUp 0.8s ease-out;
+    margin-bottom: 2rem;
+}
+
+.question-container {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.question-container.active {
+    display: block;
+}
+
+.question-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.option-card {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.option-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-color);
+}
+
+.option-card.selected {
+    border-color: var(--primary-color);
+    background-color: var(--light-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.option-card label {
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.option-card input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    transform: none !important;
+}
+
+/* Results Section */
+.result-section {
+    display: none;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#total-footprint {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    animation: pulse 1.5s infinite alternate;
+}
+
+/* Impact Visualization */
+.impact-visualization-container {
+    position: relative;
+    height: 300px;
+    margin: 2rem 0;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 1rem;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.chart-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.9rem;
+}
+
+/* Recommendations */
+.recommendation-card {
+    background-color: var(--white);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0 8px 8px 0;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    animation: slideInRight 0.5s ease-out;
+}
+
+.recommendation-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recommendation-card h4 {
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.recommendation-card p {
+    margin-bottom: 0;
+}
+
+.recommendation-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    #carbon-calculator {
+        padding: 1.5rem;
+    }
+    
+    .btn-group {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .option-card {
+        margin-bottom: 0.75rem;
+    }
+    
+    #total-footprint {
+        font-size: 2rem;
+    }
+    
+    .impact-visualization-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 1.8rem;
+    }
+    
+    #carbon-calculator {
+        padding: 1rem;
+    }
+    
+    .question-text {
+        font-size: 1.1rem;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        text-shadow: 0 0 0 rgba(76, 175, 80, 0.4);
+    }
+    to {
+        transform: scale(1.05);
+        text-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+    }
+}
+
+/* Loading Animation */
+.loading-spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(76, 175, 80, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+    margin: 2rem auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Tooltip Animation */
+.tooltip {
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tooltip.bs-tooltip-top {
+    transform: translateY(-10px);
+}
+
+.tooltip.bs-tooltip-bottom {
+    transform: translateY(10px);
+}
+
+.tooltip.bs-tooltip-start {
+    transform: translateX(-10px);
+}
+
+.tooltip.bs-tooltip-end {
+    transform: translateX(10px);
+}
+
+
+
+
+
+

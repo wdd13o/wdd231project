@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="google-translate-customization" content="9f841e7780177523-3214ceb76f765f38-gc38c6fe6f9d06436-c">
+    </meta>
+
+    <title>Eco-Friendly Living Guide</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Sustainable living, eco-friendly tips, green lifestyle" name="keywords">
+    <meta content="Your comprehensive guide to sustainable living with practical tips, resources, and tools to reduce your environmental impact." name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">                           ''
+   
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <p class="m-0 fw-bold" style="font-size: 25px;"><img src="img/logo.png" alt="Eco-Friendly Living Guide logo" height="50px">...<span
+                    style="color: #4CAF50;"> Friendly Living</span></p>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="topics.html" class="nav-item nav-link">Topics</a>
+                <a href="resources.html" class="nav-item nav-link">Resources</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tools</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="calculator.html" class="dropdown-item">Carbon Calculator</a>
+                        <a href="blog.html" class="dropdown-item">Blog</a>
+                        <a href="forum.html" class="dropdown-item">Community Forum</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="signin.html" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+                <a href="#" class="nav-item nav-link">
+                <div id="google_translate_element"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Navigation (same as your main site) -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <!-- Your existing nav code here -->
+    </nav>
+
+    <!-- Calculator Header -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="display-4 mb-3" style="color: #4CAF50;">Carbon Footprint Calculator</h1>
+            <p class="lead">Understand your environmental impact and discover ways to reduce it</p>
+        </div>
+    </div>
+
+    <!-- Calculator Progress -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" id="progress-bar" style="width: 0%"></div>
+                </div>
+                <p class="text-center" id="progress-text">Question 1 of 10</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calculator Form -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form id="carbon-calculator">
+                    <!-- Questions will be dynamically inserted here -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="container result-section" id="results">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="mb-4">Your Carbon Footprint Results</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title" id="total-footprint">0 kg CO₂/year</h3>
+                        <p class="card-text">Your estimated annual carbon footprint</p>
+                    </div>
+                </div>
+                
+               <!-- <div class="impact-visualization-container">
+    <div class="impact-visualization" id="impact-chart"> -->
+        <!-- Chart will be rendered here by JavaScript -->
+    <!-- </div>
+    <div class="chart-legend" id="chart-legend"> -->
+        <!-- Legend will be populated dynamically -->
+    <!-- </div>
+    <div class="chart-tooltip" id="chart-tooltip"></div>
+</div> -->
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title">Comparison</h4>
+                                <p id="comparison-text">Your footprint is higher than the national average.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title">Equivalent To</h4>
+                                <p id="equivalent-text">Driving X miles in a gasoline car</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="mt-5 mb-3">Personalized Recommendations</h3>
+                <div id="recommendations">
+                    <!-- Recommendations will be inserted here -->
+                </div>
+                
+                <button class="btn btn-primary mt-4" id="retake-btn">Retake Calculator</button>
+                <button class="btn btn-outline-primary mt-4" id="share-btn">Share Your Results</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer Start --> 
+     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <p><a class="text-light" href="about.html">About Us</a></p>
+                    <p><a class="text-light" href="contact.html">Contact Us</a></p>
+                    <p><a class="text-light" href="">Privacy Policy</a></p>
+                    <p><a class="text-light" href="">Terms & Condition</a></p>
+                    <p><a class="text-light" href="">FAQs & Help</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        <a href="https://www.google.com/maps?q=50+Ivan+Drive,+Allen+Town,+Freetown,+Sierra+Leone" target="_blank" style="text-decoration: none; color: inherit;">
+                            50 Ivan Drive, Allen Town, Freetown, Sierra Leone.
+                        </a>
+                    </p>
+                    
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        <a href="tel:+23288075111" style="text-decoration: none; color: inherit;">
+                            +23288075111
+                        </a>
+                    </p>
+                    
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        <a href="mailto:kallonbundujr99@gmail.com" style="text-decoration: none; color: inherit;">
+                            kallonbundujr99@gmail.com
+                        </a>
+                    </p>
+                    
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Subscribe to our Newsletter</h4>
+                    <p>Subscribe now and join our growing community of learners committed to lifelong education! </p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <form action="#">
+                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email"
+                                placeholder="Your email" required>
+                            <button type="submit"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><a
+                                    href="mailto:keertidvcorai@gmail.com">Subscribe</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                
+                        <p>© 2025 🌸 JayCode 🌸 Freetown, Sierra Leone All Rights Reserved.</p>
+                        <p>Last Modified: <span id="lastModified"></span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+ <!-- Back to Top -->
+ <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/carbon-calculator.js"
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/carbon-calculator.js"></script>
+    <script src=js/main.js></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

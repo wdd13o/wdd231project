@@ -1,0 +1,150 @@
+{
+    "categories": [
+      {
+        "id": "waste",
+        "name": "Waste Reduction",
+        "description": "Discuss recycling, composting, and zero-waste strategies"
+      },
+      {
+        "id": "energy",
+        "name": "Energy Conservation",
+        "description": "Share tips on reducing energy consumption and renewable energy"
+      },
+      {
+        "id": "food",
+        "name": "Sustainable Food",
+        "description": "Talk about plant-based diets, local food, and reducing food waste"
+      },
+      {
+        "id": "transport",
+        "name": "Green Transportation",
+        "description": "Discuss eco-friendly commuting and travel options"
+      },
+      {
+        "id": "fashion",
+        "name": "Sustainable Fashion",
+        "description": "Share ideas about ethical clothing and reducing fashion waste"
+      },
+      {
+        "id": "gardening",
+        "name": "Eco Gardening",
+        "description": "Talk about organic gardening, permaculture, and native plants"
+      }
+    ],
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Best alternatives to plastic wrap for food storage?",
+        "content": "I'm trying to eliminate plastic wrap from my kitchen. What are your favorite reusable alternatives? I've tried beeswax wraps but find them difficult to clean.",
+        "categoryId": "waste",
+        "category": "Waste Reduction",
+        "tags": ["plastic-free", "food-storage", "zero-waste"],
+        "author": {
+          "name": "Sarah Johnson",
+          "avatar": "img/profile.png",
+          "joinDate": "2023-01-15"
+        },
+        "date": "2024-03-10T14:30:00",
+        "replies": 24,
+        "views": 156,
+        "likes": 18,
+        "isSticky": false,
+        "isClosed": false
+      },
+      {
+        "id": "t2",
+        "title": "Solar panel installation experiences?",
+        "content": "Considering installing solar panels on my roof. Would love to hear from others who've done this - was it worth the investment? How much did it reduce your electricity bills?",
+        "categoryId": "energy",
+        "category": "Energy Conservation",
+        "tags": ["solar-power", "renewable-energy", "home-improvement"],
+        "author": {
+          "name": "Michael Chen",
+          "avatar": "img/1.jpg",
+          "joinDate": "2022-08-22"
+        },
+        "date": "2024-03-08T09:15:00",
+        "replies": 42,
+        "views": 287,
+        "likes": 35,
+        "isSticky": true,
+        "isClosed": false
+      },
+      {
+        "id": "t3",
+        "title": "Favorite plant-based protein sources?",
+        "content": "Transitioning to a more plant-based diet and looking for protein alternatives beyond tofu and beans. What are your go-to options?",
+        "categoryId": "food",
+        "category": "Sustainable Food",
+        "tags": ["plant-based", "nutrition", "vegan"],
+        "author": {
+          "name": "Emma Rodriguez",
+          "avatar": "img/3.jpg",
+          "joinDate": "2023-05-30"
+        },
+        "date": "2024-03-05T16:45:00",
+        "replies": 31,
+        "views": 203,
+        "likes": 27,
+        "isSticky": false,
+        "isClosed": false
+      },
+      {
+        "id": "t4",
+        "title": "Bike commuting in rainy weather",
+        "content": "Looking for advice on gear and strategies for bike commuting when it rains. How do you stay dry and safe?",
+        "categoryId": "transport",
+        "category": "Green Transportation",
+        "tags": ["biking", "commuting", "rain-gear"],
+        "author": {
+          "name": "David Kim",
+          "avatar": "img/2.jpg",
+          "joinDate": "2023-11-12"
+        },
+        "date": "2024-03-03T11:20:00",
+        "replies": 18,
+        "views": 134,
+        "likes": 15,
+        "isSticky": false,
+        "isClosed": false
+      },
+      {
+        "id": "t5",
+        "title": "Thrift store shopping tips",
+        "content": "Share your best strategies for finding quality items at thrift stores. What days are best to go? How do you inspect items for quality?",
+        "categoryId": "fashion",
+        "category": "Sustainable Fashion",
+        "tags": ["thrifting", "secondhand", "clothing"],
+        "author": {
+          "name": "Lisa Wong",
+          "avatar": "img/1.jpg",
+          "joinDate": "2022-12-05"
+        },
+        "date": "2024-02-28T13:10:00",
+        "replies": 29,
+        "views": 198,
+        "likes": 22,
+        "isSticky": false,
+        "isClosed": false
+      },
+      {
+        "id": "t6",
+        "title": "Composting in small spaces",
+        "content": "I live in an apartment with no outdoor space. What are the best composting solutions for small indoor spaces?",
+        "categoryId": "gardening",
+        "category": "Eco Gardening",
+        "tags": ["composting", "apartment-living", "small-space"],
+        "author": {
+          "name": "James Wilson",
+          "avatar": "img/2.jpg",
+          "joinDate": "2023-07-18"
+        },
+        "date": "2024-02-25T17:30:00",
+        "replies": 15,
+        "views": 112,
+        "likes": 13,
+        "isSticky": false,
+        "isClosed": false
+      }
+    ]
+  }

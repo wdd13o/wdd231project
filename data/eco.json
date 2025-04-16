@@ -1,0 +1,123 @@
+{
+    "website": {
+      "title": "Eco-Friendly Living Guide",
+      "description": "Comprehensive guide to sustainable living with practical tips, resources, and tools to reduce environmental impact",
+      "keywords": ["Sustainable living", "eco-friendly tips", "green lifestyle"],
+      "baseUrl": "index.html",
+      "favicon": "img/logo.png",
+      "features": {
+        "carbonCalculator": {
+          "description": "Interactive tool to calculate environmental impact",
+          "implementation": "JavaScript with user input processing",
+          "dataSources": ["User-provided data", "Emission factors database"]
+        },
+        "communityForum": {
+          "description": "Platform for users to discuss sustainable living",
+          "implementation": "JavaScript for real-time interactions"
+        },
+        "resourceLibrary": {
+          "description": "Collection of guides and articles on sustainability topics",
+          "categories": ["Waste reduction", "Energy conservation", "Sustainable fashion", "Green travel"]
+        }
+      },
+      "integrations": {
+        "apis": [
+          {
+            "name": "Weather API",
+            "purpose": "Provide localized energy-saving tips based on current weather",
+            "implementation": "Fetch API or Axios for data retrieval"
+          },
+          {
+            "name": "Google Translate API",
+            "purpose": "Multi-language support for global accessibility",
+            "elementId": "google_translate_element"
+          }
+        ]
+      },
+      "accessibility": {
+        "features": [
+          "ARIA labels for interactive elements",
+          "Alt text for all images",
+          "Keyboard navigability",
+          "Color contrast compliance",
+          "Semantic HTML structure"
+        ],
+        "compliance": "WCAG 2.1 AA"
+      },
+      "technicalStack": {
+        "frontend": {
+          "frameworks": ["Bootstrap 5"],
+          "libraries": [
+            "Font Awesome",
+            "jQuery",
+            "OWL Carousel",
+            "WOW.js for animations"
+          ]
+        },
+        "backend": {
+          "note": "Not specified in provided HTML"
+        }
+      },
+      "contentStructure": {
+        "pages": [
+          {
+            "name": "Home",
+            "sections": [
+              "Hero carousel",
+              "Service highlights",
+              "About section",
+              "Carbon calculator CTA",
+              "Topic categories",
+              "Featured resources",
+              "Community CTA",
+              "FAQ"
+            ]
+          },
+          {
+            "name": "Topics",
+            "description": "Detailed guides on sustainability topics"
+          },
+          {
+            "name": "Resources",
+            "description": "Downloadable guides and articles"
+          },
+          {
+            "name": "Tools",
+            "subpages": ["Carbon Calculator", "Blog", "Community Forum"]
+          }
+        ]
+      },
+      "contact": {
+        "address": "50 Ivan Drive, Allen Town, Freetown, Sierra Leone",
+        "phone": "+23288075111",
+        "email": "kallonbundujr99@gmail.com",
+        "socialMedia": ["Twitter", "Facebook", "YouTube", "LinkedIn"]
+      }
+    },
+    "developmentNotes": {
+      "javascriptImplementation": [
+        {
+          "component": "Carbon Calculator",
+          "approach": "Form validation, calculation logic, and result display using DOM manipulation"
+        },
+        {
+          "component": "Interactive Elements",
+          "approach": "Event listeners for buttons, accordions, and navigation"
+        },
+        {
+          "component": "API Integration",
+          "approach": "Asynchronous data fetching for weather and translation services"
+        }
+      ],
+      "accessibilityImplementation": [
+        {
+          "aspect": "Keyboard Navigation",
+          "implementation": "Focus management for all interactive elements"
+        },
+        {
+          "aspect": "Screen Reader Compatibility",
+          "implementation": "ARIA attributes and proper heading structure"
+        }
+      ]
+    }
+  }

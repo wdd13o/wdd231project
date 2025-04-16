@@ -1,0 +1,16 @@
+{
+    "validationRules": {
+        "email": {
+            "regex": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+            "errorMessages": {
+                "required": "Email is required",
+                "invalid": "Please enter a valid email address"
+            }
+        },
+        "password": {
+            "errorMessages": {
+                "required": "Password is required"
+            }
+        }
+    }
+}

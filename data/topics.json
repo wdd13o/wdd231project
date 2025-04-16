@@ -1,0 +1,114 @@
+{
+    "topics": [
+      {
+        "id": "waste-reduction",
+        "title": "Waste Reduction",
+        "image": "img/waste-category.jpg",
+        "description": "Learn strategies to minimize household waste, master recycling, and transition to a zero-waste lifestyle with our comprehensive guides.",
+        "keyPoints": [
+          "Composting basics",
+          "Plastic-free alternatives",
+          "Upcycling projects",
+          "Zero-waste shopping"
+        ],
+        "popularity": 4.8,
+        "resources": 15
+      },
+      {
+        "id": "energy-conservation",
+        "title": "Energy Conservation",
+        "image": "img/energy-category.jpg",
+        "description": "Discover how to reduce your energy consumption, lower utility bills, and transition to renewable energy sources with our practical guides.",
+        "keyPoints": [
+          "Home energy audits",
+          "Solar power options",
+          "Energy-efficient appliances",
+          "Smart home technology"
+        ],
+        "popularity": 4.6,
+        "resources": 12
+      },
+      {
+        "id": "sustainable-food",
+        "title": "Sustainable Food",
+        "image": "img/food-category.jpg",
+        "description": "Explore how your food choices impact the environment and learn strategies for more sustainable eating habits from farm to table.",
+        "keyPoints": [
+          "Plant-based diets",
+          "Local & seasonal eating",
+          "Food waste reduction",
+          "Organic gardening"
+        ],
+        "popularity": 4.5,
+        "resources": 18
+      },
+      {
+        "id": "green-transportation",
+        "title": "Green Transportation",
+        "image": "img/travel-category.jpg",
+        "description": "Reduce your carbon footprint with eco-friendly transportation options, from daily commutes to long-distance travel.",
+        "keyPoints": [
+          "Electric vehicles",
+          "Public transit tips",
+          "Bike commuting",
+          "Carbon offset programs"
+        ],
+        "popularity": 4.3,
+        "resources": 9
+      },
+      {
+        "id": "sustainable-fashion",
+        "title": "Sustainable Fashion",
+        "image": "img/fashion-category.jpg",
+        "description": "Build an ethical wardrobe that reduces environmental impact while still expressing your personal style.",
+        "keyPoints": [
+          "Thrifting & swapping",
+          "Eco-friendly fabrics",
+          "Clothing care & repair",
+          "Ethical brands"
+        ],
+        "popularity": 4.7,
+        "resources": 14
+      },
+      {
+        "id": "eco-gardening",
+        "title": "Eco Gardening",
+        "image": "img/garden-category.jpg",
+        "description": "Create a thriving garden that supports local ecosystems, conserves resources, and provides organic produce.",
+        "keyPoints": [
+          "Native plants",
+          "Composting",
+          "Water conservation",
+          "Natural pest control"
+        ],
+        "popularity": 4.4,
+        "resources": 11
+      }
+    ],
+    "guides": [
+      {
+        "id": "zero-waste-guide",
+        "title": "Zero Waste Kitchen: 30-Day Challenge",
+        "image": "img/zero-waste-guide.jpg",
+        "rating": 4.8,
+        "downloads": 12000,
+        "readTime": "15 min read"
+      },
+      {
+        "id": "solar-guide",
+        "title": "Home Solar Power: Beginner's Guide",
+        "image": "img/solar-guide.jpg",
+        "rating": 4.6,
+        "downloads": 8500,
+        "readTime": "25 min read"
+      },
+      {
+        "id": "thrifting-guide",
+        "title": "Thrift Shopping Like a Pro",
+        "image": "img/thrifting-guide.jpg",
+        "rating": 4.7,
+        "downloads": 15000,
+        "readTime": "12 min read"
+      }
+    ]
+  }

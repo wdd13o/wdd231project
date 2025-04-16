@@ -1,0 +1,136 @@
+{
+    "categories": [
+      "Energy Efficiency",
+      "Waste Reduction",
+      "Sustainable Food",
+      "Green Transportation",
+      "Water Conservation",
+      "Eco-Friendly Products",
+      "Renewable Energy",
+      "Sustainable Fashion",
+      "Green Building",
+      "Climate Action"
+    ],
+    "resources": [
+      {
+        "id": 1,
+        "title": "The Ultimate Guide to Zero Waste Living",
+        "description": "Comprehensive guide covering all aspects of reducing household waste, from kitchen to bathroom.",
+        "category": "Waste Reduction",
+        "type": "guide",
+        "url": "https://example.com/zero-waste-guide",
+        "image": "https://www.zadinteriors.com/blog/wp-content/uploads/2021/09/6.-Sage-Green-Living.jpg",
+        "featured": true,
+        "author": "Green Living Institute",
+        "date": "2024-03-15"
+      },
+      {
+        "id": 2,
+        "title": "Carbon Footprint Calculator",
+        "description": "Interactive tool to calculate your personal carbon footprint based on lifestyle choices.",
+        "category": "Climate Action",
+        "type": "tool",
+        "url": "https://example.com/carbon-calculator",
+        "image": "https://th.bing.com/th/id/OIP.624FCYramgCwn-OkkIr4VgHaE8?rs=1&pid=ImgDetMain",
+        "featured": true,
+        "author": "Climate Watch",
+        "date": "2024-01-10"
+      },
+      {
+        "id": 3,
+        "title": "Plant-Based Diet for Beginners",
+        "description": "Video series showing how to transition to a sustainable plant-based diet.",
+        "category": "Sustainable Food",
+        "type": "video",
+        "url": "https://example.com/plant-based-videos",
+        "image": "https://th.bing.com/th/id/OIP.0mnv_7Abgyt-Q93BEIGCDgHaEH?rs=1&pid=ImgDetMain",
+        "featured": true,
+        "author": "Eco Nutrition",
+        "date": "2023-11-22"
+      },
+      {
+        "id": 4,
+        "title": "DIY Solar Panel Installation",
+        "description": "Step-by-step article on installing residential solar panels safely and effectively.",
+        "category": "Renewable Energy",
+        "type": "article",
+        "url": "https://www.youtube.com/watch?v=jSa1tvrrFZg",
+        "image": "https://th.bing.com/th/id/OIP.n9EXmQkMoOBljSQnT-AjkQHaEK?rs=1&pid=ImgDetMain",
+        "featured": false,
+        "author": "Solar Power Now",
+        "date": "2024-02-05"
+      },
+      {
+        "id": 5,
+        "title": "The Sustainable Home Handbook",
+        "description": "E-book with practical tips for making every room in your home more eco-friendly.",
+        "category": "Green Building",
+        "type": "book",
+        "url": "https://youtu.be/nO0APnT2jHY",
+        "image": "https://th.bing.com/th/id/OIP.qERbmEj7Qa5B8gNy_zeJIgHaF7?rs=1&pid=ImgDetMain",
+        "featured": false,
+        "author": "Eco Home Press",
+        "date": "2023-09-18"
+      },
+      {
+        "id": 6,
+        "title": "Green Commuting Podcast Series",
+        "description": "Weekly podcast exploring sustainable transportation options from biking to electric vehicles.",
+        "category": "Green Transportation",
+        "type": "podcast",
+        "url": "https://example.com/green-commuting",
+        "image": "https://th.bing.com/th/id/OIP.Eyud7W4ZkDS97-UlZEe_fgHaE8?rs=1&pid=ImgDetMain",
+        "featured": true,
+        "author": "The Eco Traveler",
+        "date": "2024-04-02"
+      },
+      {
+        "id": 7,
+        "title": "Water Conservation Toolkit",
+        "description": "Collection of resources including calculators, how-to guides, and product recommendations.",
+        "category": "Water Conservation",
+        "type": "tool",
+        "url": "https://www.bing.com/videos/riverview/relatedvideo?&q=Water+Conservation+Toolkit&&mid=49C152CB312BB5FC296F49C152CB312BB5FC296F&mmscn=mtsc&aps=126&FORM=VRDGAR",
+        "image": "img/resources/water-conservation.jpg",
+        "featured": false,
+        "author": "Aqua Future",
+        "date": "2023-12-15"
+      },
+      {
+        "id": 8,
+        "title": "Ethical Fashion Directory",
+        "description": "Searchable database of sustainable clothing brands with transparency ratings.",
+        "category": "Sustainable Fashion",
+        "type": "tool",
+        "url": "https://example.com/ethical-fashion",
+        "image": "img/resources/ethical-fashion.jpg",
+        "featured": false,
+        "author": "Fashion Revolution",
+        "date": "2024-03-28"
+      },
+      {
+        "id": 9,
+        "title": "Energy Efficiency Audit Guide",
+        "description": "Learn how to conduct a home energy audit and identify savings opportunities.",
+        "category": "Energy Efficiency",
+        "type": "guide",
+        "url": "https://example.com/energy-audit",
+        "image": "https://th.bing.com/th/id/OIP.Eyud7W4ZkDS97-UlZEe_fgHaE8?rs=1&pid=ImgDetMain",
+        "featured": true,
+        "author": "Energy Wise",
+        "date": "2023-10-30"
+      },
+      {
+        "id": 10,
+        "title": "Eco-Friendly Product Certification Explained",
+        "description": "Video explainer on how to understand various eco-labels and certifications.",
+        "category": "Eco-Friendly Products",
+        "type": "video",
+        "url": "https://example.com/eco-certifications",
+        "image": "https://th.bing.com/th/id/OIP.Eyud7W4ZkDS97-UlZEe_fgHaE8?rs=1&pid=ImgDetMain",
+        "featured": false,
+        "author": "Green Standards",
+        "date": "2024-01-25"
+      }
+    ]
+  }
